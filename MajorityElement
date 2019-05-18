@@ -16,12 +16,12 @@ int main ()
     int majorityElement=A[n/2+1];
     int nrOccurrences=0;
 
-    for (int i=1; i<=n; ++i)
-        if (A[i]==majorityElement) ++nrOccurrences;
+    // for (int i=1; i<=n; ++i)
+    //    if (A[i]==majorityElement) ++nrOccurrences;
 
-    if (nrOccurrences >= n/2 + 1) {
+    if (A[n/2 + 1]==A[0]) {
         cout<<"The majority element is "<<majorityElement;
-        cout<<" and it appears "<<nrOccurrences<<" times";
+        //cout<<" and it appears "<<nrOccurrences<<" times";
     } else cout<<"-1\n";
 
     return 0;
